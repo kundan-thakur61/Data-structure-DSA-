@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" multiple onchange= "uploadfiles(this.files)">
+    <div id="message"></div>
+
+    <script>
+        // let message=document.getElementById("message");
+        // function uploadfiles(files)
+        // {
+        // console.log(files[0]);
+        // message.innerText=files[0].name;
+        // }
+
+      
+ let message = document.getElementById("message");
+ function uploadFile(files) {
+ for (let i = 0; i < files.length; i++) {
+ message.innerHTML += files[i].name + "<br>";
+ }
+ }
+ </script>
+</body>
+</html>

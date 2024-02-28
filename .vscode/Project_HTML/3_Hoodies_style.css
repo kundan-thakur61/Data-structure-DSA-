@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap')
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+:root{
+    --main-color:#239b7e;
+    --main-font:'Playfair Display', serif;
+    --primary-font:'Roboto Condensed', sans-serif;
+}
+/* nav starts */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+.logo{
+    margin-left: 5rem;
+}
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 5rem;
+
+}
+.burger span{
+    border:2px solid var(--main-color);
+    width: 40px;
+    height: 1px;
+    margin: 2px;
+}
+/* nav ends */
+/* header starts */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    margin-top: 2rem;
+
+
+}
+
+.main-heading
+{
+    font-size:4rem;
+    font-family: var(--main-font);
+    transform: translate(-40px);
+    color: rgb(53, 51, 51);
+    line-height: 5rem; 
+}
+.main-heading span{
+    color: black;
+}
+.primary-heading{
+    max-width: 500px;
+    font-family: var(--primary-font);
+    line-height: 25px;
+    margin-bottom: 1rem;
+    color:#716d6d ;
+}
+btn-fill{
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.btn-fill:hover{
+    background:var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #fff;
+}
+
+.btn-outline .active
+{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition:all 0.5s ease-out ;
+}
+.btn-outline.active:hover{
+    background :var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #fff;
+}
+.img-container{
+    border-radius: 50%;
+    box-shadow: 4px 7px 5px 2px #bcbaba;
+}
+.header-img{
+    border-radius: 100%;
+    background: url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/94.%20Hoodie/images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg?raw=true");
+    background-position: top;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+
+}
+/* header ends */
+
+.section-one{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+
+}
+section-one-img {
+    background: url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/94.%20Hoodie/images/yogendra-singh-uWs_N5Dlyiw-unsplash.jpg?raw=true");
+    background-position: top;
+    background-size: cover;
+
+}
+/* section end */
+/* product start */
+.product{
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product.product-headings{
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+}
+.product.product-categories{
+    margin-right: 20px;
+    margin-bottom: 2rem;
+
+}
+
+.product.product-item-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    max-width: 60rem;
+}
+
+.product.product-item-container.item{
+    margin: 20px;
+}
+.product.product-item-container.iem-layer{
+    background: #ebf1f0;
+    padding: 40px;
+    margin-right: 20px0;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+.product.product-item-container.iem-layer img{
+    width: 150px;
+    height: 200px;
+}
+
+.product.product-item-container.item.item-Name{
+    font-family: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.product.product-item-container.item.item-price{
+    font-family: var(--primary-font);
+margin-bottom: 10px;
+}
+
+.product.product-item-container.item.view-product{
+font-family: var(--primary-font);
+margin-bottom: 10px;
+text-decoration: none;
+color: var(--main-color);
+border-bottom: 1px solid var(--main-color);
+}
+
+/* customer review STARTS */
+.customer-reviews{
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    align-items: center;
+
+}
+.customer{
+    text-align: center;
+}
+
+.customer-heading{
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.customer-reviews.CUSTOMER-DECRIPTION{
+    font-size: 12px;
+    margin-top: 20px;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px;
+    font-family:var(--primary-font) ;
+}
+.customer.customer-img.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.customer.img-one{
+background: url("https://cdn.siasat.com/wp-content/uploads/2023/06/Virat-Kohli-1-780x470.jpg");
+}
+

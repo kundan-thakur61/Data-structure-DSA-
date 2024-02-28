@@ -1,0 +1,55 @@
+ 
+<!-- 4.	Write a program for some text using CSS technique 
+ <!doctype html> 
+<html>
+    <head>
+        <title>shows headings five time</title>
+        <style>
+      p{
+          font-family:arrial;
+          background-color:red;
+          color:rgb(12, 1, 1);
+          lenght 
+        }
+        h1{
+          font-family:arrial;
+          background-color:rgb(129, 244, 5);
+          color:rgba(94, 6, 77, 0.882); 
+        }
+    </style>
+    </head>
+    <body>
+<h1>this is heading for paragraph</h1>
+      <p>to understand to used css</p>  
+       
+      <br/>
+    </body>
+</html> -->
+
+<!-- 5.	Write a program to insert an image in a page.  -->
+<!doctype html> 
+<html>
+    <head>
+        <title>insert an image in a page.</title>
+        </head>
+        <body>
+            <script>
+                // Locate all anchor tags on the page
+                var anchors = document.getElementsByTagName("a");
+                // Loop through all anchor tags
+                for ( var i=0; i < anchors.length; i++ ) {
+                var anchor = anchors[i];
+                // Make sure that the link is a "lightbox" link
+                if ( anchor.href && anchor.rel == "lightbox" ) {
+                // Make it so that a Lightbox is shown on click
+                anchor.onclick = function () {
+                showLightbox(this);
+                return false;
+                };
+                }
+                }</script>
+            <!-- <p>To set image</p>
+            <img src="download/image.jpg" alt="wait few second" align="left"
+            border="4" width="150" height="200"/> -->
+                </body>
+            </html>

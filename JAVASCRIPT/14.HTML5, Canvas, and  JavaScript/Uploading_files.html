@@ -1,0 +1,36 @@
+<!-- 
+
+<!DOCTYPE html>
+<html>
+ <body>
+ <input type="file" onchange="uploadFile(this.files)" />
+ <div id="message"></div>
+
+ <script>
+    let message = document.getElementById("message");
+    function uploadFile(files) {
+    console.log(files[0]);
+    message.innerText = files[0].name;
+    }
+    </script>
+    </body>
+   </html> -->
+
+
+<!-- multiple files upload  -->
+
+<html>
+   <body>
+   <input type="file" multiple onchange="uploadFile(this.files)" />
+   <div id="message"></div>
+   <script>
+   let message = document.getElementById("message");
+   function uploadFile(files) {
+   for (let i = 0; i < files.length; i++) {
+   message.innerHTML += files[i].name + "<br>";
+   }
+   }
+   </script>
+   </body>
+  </html>
+  

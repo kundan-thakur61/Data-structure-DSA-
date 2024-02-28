@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+:root{
+    --main-color:#deab5f;
+    --primary-color:#312e2e;
+}
+/* utility styles */
+button
+{
+    padding: 10px 30px;
+    background:var(--main-color);
+    border:none;
+    cursor:pointer;
+}
+/* resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: #100e0f;
+}
+/*  sart nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
+    font-family: sans-serif;
+    padding-top: 15px;
+}
+
+li{
+    display:inline;
+    list-style: none;
+
+}
+
+li a{
+    color: #ffff;
+    text-decoration: none;
+    margin-left:40px;
+    padding-bottom: none;
+}
+li a:hover
+{
+    border-bottom: 2px solid var(--main-color);
+
+}
+/* end nav */
+/* header start */
+.Header{
+background: url(https://staticg.sportskeeda.com/editor/2023/06/90f7a-16868543287839-1920.jpg);
+background-position: center;
+background-size: cover;
+height: 100vh;
+font-family: "flair Display",serif;
+font-weight: normal;
+/* flex box here */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #fff;
+position:relative;
+text-align: center;
+}
+main-headings{
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+   
+}
+.primay-heading{
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4rem;
+    margin-bottom: -40px;
+
+
+}
+.main-btn{
+    position: absolute;
+    bottom: 2rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background:transparent;
+    background:var(--main-color);
+    transform: translateY(60px);
+
+}
+/* our story starts */
+#our-Stroy{
+    height: 100vh;
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.img{
+    width: 400px;
+    height: 400px;
+    background:url(https://images.pexels.com/photos/17516408/pexels-photo-17516408/free-photo-of-coffee-beans-spilling-out-of-a-jar.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+    background-position: center;
+    background-size: cover;
+}
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-family:'flair Display',serif ;
+    font-size: 4rem;
+    color:#fff;
+    transform: translateX(-100px);
+}
+.line{
+    width: 100px;
+    height:2px;
+    background: #fff;
+    transform: translateX(-120px);   
+}
+section-content p{
+    max-width: 500px;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px,0;
+}
+/* our story end */
+
+/* cofffe start */
+.img-container{
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.img-2{
+    width: 400px;
+    height:400px ;
+}
+.title-two{
+    font-size: 4rem;
+    color: #fff;
+    font-family: "flair Display",serif;
+    
+}
+.content-section p{
+    max-width: 500px;
+    margin-top: none;
+    font-family: sans-serif;
+    color: #fff;
+    }
+
+    /* cofee end */
+
+    /* product start */
+    .product{
+        margin-top: 5rem;
+    }
+
+
+    .title-three{
+        font-size: 4rem;
+        margin-left: 10rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card{
+        border:2px solid var(--main-color);
+        padding: 0 20px;
+        height: 400px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 50px;
+        position: relative;
+        margin-bottom: 4rem;
+    }
+    .card-img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top:-60px;
+        border-radius: 100%;
+  
+    }
+    .img-one{
+        background: url(https://wakefitdev.gumlet.io/img/mugandkullhad/coffeemug/polychrome/1.jpg?w=1600);
+        background-position: center;
+        background-size: cover;
+    }
+    .img-two{
+        background: url(https://i5.walmartimages.com/asr/42297ddf-537d-406c-819e-e3d57d2f9d8b.90a0fd7fdf2a54556a92c57a3d7c5683.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img-three{
+        background: url(https://th.bing.com/th/id/OIP.dfOsJLeLxK4y_n0IrYYKKAHaHa?rs=1&pid=ImgDetMain);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card-title{
+        color:white;
+        font-family: sans-serif;
+        margin-top: 50px;
+
+    }
+
+    .items{
+        color: #fff;
+        margin: 20px;
+        font-family: sans-serif;
+    }
+    /* product end */
+
+    footer{
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around ;
+        align-items: center;
+        color: #fff;
+        font-family: sans-serif;
+
+    }
+    .container{
+    margin: 20px;
+    max-width: 300px;
+    text-align:center;
+    
+    }
+    .heading-info{
+        color: var(--main-color);
+    }
+
+    hr{
+        margin-bottom: 20px;
+        border: var(--main-color);
+        width: 500px;
+        margin: 0 auto;
+    }
+    .para{
+        
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around ;
+        align-items: center;
+        color: #7b0606;
+        font-family: sans-serif;
+
+
+
+    /* project end */
+    /* responsive */
+
+    @media only screen and(max-widht:768px) {
+        .main-headings,
+        .primay-heading{
+            font-size: 2.5rem;
+        }
+    }
+
+    #our-Stroy.title{
+        transform:translateX(50px) ;
+    }
+
+        #our-Stroy.line{
+            display: none;
+        }
+        .content-section{
+            text-align: center;
+        }
+        #our-Stroy.img-container.img{
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .coffee-container.img-container{
+            margin: 5rem;
+            width: 50%;
+        }
+        .title{
+            margin: 0 auto;
+        }
+        .title-two{
+            margin: 0 auto;
+
+        }
+        .title-three{
+          display: none;
+        }
+    .para{
+        display: none;
+    }

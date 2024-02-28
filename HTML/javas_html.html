@@ -1,0 +1,62 @@
+<!-- <!doctype html> 
+<html>
+ <body>
+ <div id="wrapper"></div>
+ <form action="anotherpage.html" method="get" onsubmit="return 
+valForm()">
+ <input type="text" id="firstName" name="firstName"
+placeholder="First name" />
+ <input type="text" id="lastName" name="lastName"
+placeholder="Last name" />
+ <input type="text" id="age" name="age" placeholder="Age" />
+ <input type="submit" value="submit" />
+ </form>
+ <script>
+ function valForm() {
+ var p = event.target.children;
+
+
+
+if (p.firstName.value == "") {
+ message("Need a first name!!");
+ return false;
+ }
+ if (p.lastName.value == "") {
+ message("Need a last name!!");
+ return false;
+ }
+ if (p.age.value == "") {
+ message("Need an age!!");
+ return false;
+ }
+ return true;
+ }
+ function message(m) {
+ document.getElementById("wrapper").innerHTML = m;
+ }
+ </script>
+ </body>
+</html>
+-->
+<html>
+    <head>
+        <title>
+          js tester
+        </title>
+        <body>
+         
+            
+           <h1 class="output">hello</h1>
+
+          <divclass="output">test</div>
+
+
+          <script>
+            const ele1=document.querySelector("hii");
+            console.dir(ele1);
+            const eles=document.querySelectorAll(".output");
+            console.log(eles);
+          </script>
+        </body>
+    </head>
+</html>

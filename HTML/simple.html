@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          simple js  
+        </title>
+
+    </head>
+    <body>
+        <script>
+        //     var array=['kundan' ,'abhi' ,'1000'];
+        //     document.write(array);
+
+var n=121,reverse=0,rem;
+var m=n;
+while(n>0)
+{
+    rem=n%10;
+    reverse=reverse*10+rem;
+    n=Math.floor(n/10);
+
+}
+if(m==reverse)
+{
+    document.write("palondrome hai")   ;
+
+
+}
+else
+{
+    document.write("palindrome na hai");
+
+}
+// document.write(reverse);
+
+
+
+       </script>
+    </body>
+</html>
+
+
+<!-- 
+
+html>
+
+<head>
+    <title>Reverse Number</title>
+</head>
+
+<body>
+    <p>Reverse Number</p>
+    <script>
+        var n = 1239, rev = 0, r;
+        while (n > 0) {
+            r = n % 10;
+            rev = rev * 10 + r;
+            n = Math.floor(n / 10);
+        }
+        document.write("Reverse number is :" + rev);
+    </script>
+</body>
+
+</html> -->

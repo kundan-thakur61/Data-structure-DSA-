@@ -1,0 +1,44 @@
+
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+   <style>
+.Scroll_Wrapper{
+    display: grid;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    gap: 0 20px;
+    grid-template-rows: auto auto;
+    grid-auto-columns: auto;
+    grid-auto-flow:column;
+   }   
+   .Item {
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-template-columns: 100px 200px;
+    gap: 0 20px;
+    margin: 0;
+   }
+
+   </style>
+   <body>
+    <div class="Scroll_Wrapper">
+        <figure class="Item">
+        <img src="Sun.jpg" alt="Our Sun in space" />
+        <figcaption class="Caption">The Sun</figcaption>
+            
+         <p>The Sun is a yellow dwarf star, a hot ball of glowing gases
+        at the heart of our solar system. Its gravity holds everything
+        from the biggest planets to tiny debris in its orbit.
+        </p>
+        </figure>
+        </body>
+        </html>

@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html>
+ <body>
+ <input type="file" onchange="uploadAndReadFile(this.files)" />
+ <div id="message"></div>
+ <script>
+ let message = document.getElementById("message");
+ function uploadAndReadFile(files) {
+ let fr = new FileReader();
+ fr.onload = function (e) {
+ message.innerHTML = e.target.result;
+ };
+ fr.readAsText(files[0]);
+ }
+ </script>
+ </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <input type="file" onchange="uploadAndReadfiles(this.files)">
+    <div id="message"></div>
+    <script>
+        let message=document.getElementById("message");
+        function uploadAndReadfiles(files) {
+            let FR=new FileReader();
+            FR.onload=function(e)
+            {
+                message.innerHTML=e.target.result;
+            };
+            FR.readAsText(files[0]);
+            
+        }
+    </script>
+</body>
+</html>

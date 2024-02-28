@@ -1,0 +1,32 @@
+<!-- onkeypress onkeydown -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript is fun</title>
+</head>
+<body>
+
+        <div id="wrapper">javascript is fun</div>
+        <input type="text" name="num1" onkeypress="return numcheck()" >
+        <input type="text" name="num2" onkeypress="return numcheck1()" >
+    
+    <script>
+        function numcheck()
+        {
+            message("number"+!isNaN(event.key));
+            return !!isNaN(event.key);
+        }
+        function numcheck1()
+        {
+            message("not a number"+isNaN(event.key));
+            return isNaN(event.key);
+        }
+        function message(m)
+        {
+           document.getElementById('wrapper').innerHTML=m; 
+        }
+    </script>
+</body>
+</html>
